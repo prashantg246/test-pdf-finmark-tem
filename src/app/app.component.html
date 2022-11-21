@@ -1,7 +1,13 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
 
-<embed *ngIf="documentSrc"
-[src]="documentSrc | safe: 'resourceUrl'" class="pdf-demo" type="application/pdf" />
+<div>
+  <button (click)="fetchPDF()">Fetch PDF</button>
+</div>
+
+<embed
+  *ngIf="documentSrc"
+  [src]="documentSrc | safe: 'resourceUrl'"
+  class="pdf-demo"
+  type="application/pdf"
+/>

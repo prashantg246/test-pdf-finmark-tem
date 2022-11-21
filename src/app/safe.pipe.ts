@@ -5,6 +5,7 @@ import {
   SafeResourceUrl,
   SafeStyle,
   SafeUrl,
+  SafeScript
 } from '@angular/platform-browser';
 
 @Pipe({
