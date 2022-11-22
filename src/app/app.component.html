@@ -15,7 +15,10 @@
 
 <iframe [src]="documentSrc | safe: 'resourceUrl'" frameborder="0"></iframe>
 
-<object [data]="documentSrc | safe: 'resourceUrl'" type=""></object>
+<object
+  [data]="documentSrc | safe: 'resourceUrl'"
+  type="application/pdf"
+></object>
 
 <object [data]="documentSrc | safe: 'resourceUrl'" type="">
   <iframe [src]="documentSrc | safe: 'resourceUrl'" frameborder="0">
