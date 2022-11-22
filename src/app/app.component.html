@@ -17,6 +17,12 @@
 
 <object [data]="documentSrc | safe: 'resourceUrl'" type=""></object>
 
+<object [data]="documentSrc | safe: 'resourceUrl'" type="">
+  <iframe [src]="documentSrc | safe: 'resourceUrl'" frameborder="0">
+    Please update your browser!
+  </iframe>
+</object>
+
 <!-- <ngx-extended-pdf-viewer
   [src]="documentSrc"
   [height]="'58vh'"
