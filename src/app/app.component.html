@@ -10,14 +10,15 @@
   *ngIf="documentSrc"
   [src]="documentSrc | safe: 'resourceUrl'"
   class="pdf-demo"
-  type="application/pdf"
+  type=""
 />
 
 <iframe [src]="documentSrc | safe: 'resourceUrl'" frameborder="0"></iframe>
 
 <object
+  *ngIf="documentSrc"
   [data]="documentSrc | safe: 'resourceUrl'"
-  type="application/pdf"
+  type=""
 ></object>
 
 <object [data]="documentSrc | safe: 'resourceUrl'" type="">
